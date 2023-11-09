@@ -7,7 +7,7 @@ Suite Teardown    End Suite
 Test Template     create contacts using excel
 
 *** Variables ***
-${MulRecMessage}        Hoh Hoh!Successfully inserted Multiple Records from Excel for .  
+${MulRecMessage}        Hoh Hoh!Successfully inserted Multiple Records from Excel for 
 
 *** Test Cases ***
 create contacts using excel with ${M_Salutation}    ${M_FirstName}     ${M_LastName}    ${M_Phone}
