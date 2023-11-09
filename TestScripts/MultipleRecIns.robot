@@ -10,6 +10,7 @@ Test Template     create contacts using excel
 ${MulRecMessage}        Hoh Hoh!Successfully inserted Multiple Records from Excel for 
 
 *** Test Cases ***
+[Tags]        MultipleRecord
 create contacts using excel with ${M_Salutation}    ${M_FirstName}     ${M_LastName}    ${M_Phone}
 
 *** Keywords ***
