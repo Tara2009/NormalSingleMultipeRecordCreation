@@ -7,6 +7,8 @@ Suite Teardown            End Suite
 # Second Time code push to code
 # Third Time Code Push to Git
 # Fourth Time Code Push to Git
+*** Variables ***
+${Message}    Hoh Hoh!Successfully Direct inserted Record.
 
 *** Test Cases ***
 Contact Creation
@@ -84,4 +86,5 @@ Contact Creation
     ClickText             Save                        partial_match=False
     UseModal              Off
     ClickText             Details
+    Log                   ${Message}
 
