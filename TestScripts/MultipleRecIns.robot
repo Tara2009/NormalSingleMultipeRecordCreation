@@ -14,7 +14,6 @@ create contacts using excel with ${M_Salutation}    ${M_FirstName}     ${M_LastN
 
 *** Keywords ***
 create contacts using excel
-    [Tags]               MultipleRecord
     [Arguments]          ${M_Salutation}             ${M_FirstName}              ${M_LastName}               ${M_Phone}
     Appstate             Home
     LaunchApp            Sales
