@@ -57,7 +57,8 @@ create contacts using excel
     ClickText                   Save                        partial_match=False
     UseModal                    Off
     Sleep                       1
-    Log                        ${MulRecMessage}         ${fullName}
+    ${ConfirmMessage}           Catenate                    ${MulRecMessage}            ${fullName}   
+    Log                        ${ConfirmMessage}
 
  # Delete generated contacts for cleanup
     #LaunchApp                   Sales
