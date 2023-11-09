@@ -7,7 +7,7 @@ Suite Teardown    End Suite
 Test Template     create contacts using excel
 
 *** Variables ***
-${MulRecMessage}        Hoh Hoh!Successfully inserted Multiple Records from Excel.  
+${MulRecMessage}        Hoh Hoh!Successfully inserted Multiple Records from Excel for .  
 
 *** Test Cases ***
 create contacts using excel with ${M_Salutation}    ${M_FirstName}     ${M_LastName}    ${M_Phone}
@@ -57,7 +57,7 @@ create contacts using excel
     ClickText                   Save                        partial_match=False
     UseModal                    Off
     Sleep                       1
-    Log                        ${fullName}                  ${MulRecMessage}
+    Log                        ${MulRecMessage}         ${fullName}
 
  # Delete generated contacts for cleanup
     #LaunchApp                   Sales
