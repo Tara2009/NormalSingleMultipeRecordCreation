@@ -15,12 +15,12 @@ Entering Contact
     VerifyText                  Recently Viewed             timeout=120s
     ClickText                   New                         anchor=import               timeout=120s
     UseModal                    On
-    PickList                    Salutation                  ${C_Salutation}
-    TypeText                    First Name                  ${C_FirstName}
-    TypeText                    Last Name                   ${C_LastName}
-    ${fullName}                 Catenate                    ${C_FirstName}              ${C_LastName}
+    PickList                    Salutation                  ${S_Salutation}
+    TypeText                    First Name                  ${S_FirstName}
+    TypeText                    Last Name                   ${S_LastName}
+    ${fullName}                 Catenate                    ${S_FirstName}              ${S_LastName}
     Log                        ${fullName}
-    TypeText                    Phone                       ${C_Phone}
+    TypeText                    Phone                       ${S_Phone}
     ComboBox                    Search Accounts...          Dickenson plc
     TypeText                    Email                       tara@gamil.com
     TypeText                    Mailing Street              hanuman nagar 4th line
